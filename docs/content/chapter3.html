@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3 &mdash; sphinx_test 1 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'1',
+              LANGUAGE:'zh',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="2 实验前须知" href="chapter2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> sphinx_test
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">第一章 皮肤电概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2 实验前须知</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#eda-scl">3.1 量化基础EDA（SCL）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eda-scr">3.2 量化相位EDA（SCR）</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">sphinx_test</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>3</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/content/chapter3.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>3<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="eda-scl">
+<h2>3.1 量化基础EDA（SCL）<a class="headerlink" href="#eda-scl" title="永久链接至标题">¶</a></h2>
+<p>SCL产生的基线是不断变化的，换言之，个体的基础SCL信号是持续变化的，彼此之间也可能差异显著。因此，不能简单对SCL信号进行平均化处理来量化SCL，平均数可能会包含SCR，导致高估真实的SCL值，这种方式量化的结果很难判断被试的整体SCL水平是高是低。<br />研究者在量化SCL信号前，需从基础信号中减去相位信号（SCR）的振幅，或是在未产生SCR的周期中测量，这样得出的基线更加真实可靠。在研究SCL时，常见的操作是对信号进行归一化，即人为设定一条SCL信号作为基准，然后对同一被试进行不同操作，比较产生的SCL信号与基准信号之间的相对差值，不考虑绝对差值。
+<img alt="avatar" src="source/picture/normalization.png" /></p>
+<center>线性归一化公式</center><p><img alt="avatar" src="source/picture/meannormalization.png" /></p>
+<center>均值归一化公式</center>
+此外，建议对NS-SCRs频率（静息状态下通常为1-3次/分钟，高唤醒状态下超20次/分钟）以及NS-SCRs的峰值振幅进行测量，原因如下：<ul class="simple">
+<li>这些分量可直接参与计算，前提是测量不同被试或不同条件时要选择固定的测量时间尺度。</li>
+<li>一些较早的研究发现，SCL随着NS-SCRs频率的增加而下降，但之后研究者们同样发现，当被试处于高唤醒状态时，NS-SCRs频率会显著增加，尽管对于NS-SCRs的频率/振幅能否直接代替传统SCL信号一直争议不断，但至少可以将其看成反映唤醒程度的指标之一。（注：在高唤醒状态下，NS-SCRs可能会连续产生或相互叠加。）</li>
+</ul>
+</div>
+<div class="section" id="eda-scr">
+<h2>3.2 量化相位EDA（SCR）<a class="headerlink" href="#eda-scr" title="永久链接至标题">¶</a></h2>
+<p>在测量EDA的实验中，首先要制定一个标准来确定得到的SCR信号是事件相关的还是非特异性的。如果标准制定过于宽松，可能会导致误将NS-SCR视为ER-SCR一并分析，误认为这些值与实验操作有关。如果标准制定过于严格，会导致许多ER-SCR被错误分至NS-SCR一类过滤掉，结果无法达到预期标准。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="chapter2.html" class="btn btn-neutral float-left" title="2 实验前须知" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zmr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
