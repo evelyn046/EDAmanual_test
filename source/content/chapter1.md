@@ -25,7 +25,7 @@ EDA涉及的概念很多，总体可以分为基础信号（tonic signal）和�
 * 相位信号指变化激烈明显的信号，是一种变化非常迅速且仅需短暂时间即可发生的反映，它典型地代表了对某一特定刺激的反映。相位信号通常也称皮肤电导反映（Skin Conductance Response,SCR），SCR是在SCL水平上出现的一个相对快的瞬时波动，是由各种刺激引起的生理心理反应。其中SCR还可以进一步划分为NS-SCRs和ER-SCRs，前者指在无外界特定刺激下产生的SCR，后者指在具体诱导刺激下产生的SCR，实验中通常关注ER-SCR，同时需要排除NS-SCR的影响。
 
 
-![avatar](/source/picture/eda.png)
+![](https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/eda.png)
 <center>图1.1</center>
 
 | 测量值|中文|定义
@@ -35,7 +35,7 @@ EDA涉及的概念很多，总体可以分为基础信号（tonic signal）和�
 | NS-SCRs<BR>(Non-Specific SCR)|非特异性皮肤电导反映|无外界刺激情况下产生的SCR
 |ER-SCRs<BR>(Event-Related SCR)|事件相关皮肤电导反映|具体诱发刺激下产生的SCR
 
-![avatar](/source/picture/sclscr.png)
+![](https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/sclscr.png)
 <center>图1.2 SCL与SCR</center>
 
 
@@ -45,7 +45,7 @@ EDA涉及的概念很多，总体可以分为基础信号（tonic signal）和�
 
 在同时测量SCL和SCR时需要注意一点：测量记录SCL和SCR所需的精度不同。例如，如果设备的精度范围是依照监测SCL设定的，那么会导致SCR无法明显显示出来，如果按照监测SCR的精度设定，则无法观测到SCL（如下图所示）。因此，在同时观察SCL和SCR时，需考虑使用不同的尺度分别显示SCL和SCR信号。
 
-![avatar](/source/picture/jingdu.png)
+![](https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/jingdu.png)
 <center>图1.3 图片的上半部分为基线性SCL，在该测量精度下，SCR基本观察不到；下半部分为信号放大后的相位性SCR，在该测量精度下，难以完整观察SCL。</center>
 
 ### 1.3.2 SCR的指标特征

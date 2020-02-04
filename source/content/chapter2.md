@@ -5,7 +5,8 @@
 如果选择将电极贴附在被试手部，通常有两种贴附方式：
 * 手指放置：将电极贴附在被试非优势手指的食指和无名指上，相隔中指放置的目的是避免两指电极发生误触。为防松动、脱落可以使用医用橡胶胶布将电极片和导线加固。
 * 手掌放置：将电极贴附在被试的手掌的鱼际和小鱼际上，电极放置在手掌上更明显，显示的电导反应页更明显，且受运动伪差的影响更少。为防松动、脱落可以使用医用橡胶胶布将电极片和导线加固
-![avatar](/source/picture/palm.png)
+
+![](https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/palm.png)
 <center>图2.1 手掌电极放置位置</center>
 
 具体步骤：

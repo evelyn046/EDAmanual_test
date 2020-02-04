@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3 &mdash; sphinx_test 1 文档</title>
+  <title>4 相关实验介绍 &mdash; sphinx_test 1 文档</title>
   
 
   
@@ -44,8 +44,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="4 相关实验介绍" href="chapter4.html" />
-    <link rel="prev" title="2 实验前须知" href="chapter2.html" /> 
+    <link rel="prev" title="3" href="chapter3.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,12 +92,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">第一章 皮肤电概述</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">2 实验前须知</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#eda-scl">3.1 量化基础EDA（SCL）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#eda-scr">3.2 量化相位EDA（SCR）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4 相关实验介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4.1 皮肤电信号在产品外观偏好评价中的应用研究</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eemd">4.2 可用性测试中用户皮肤电水平变化分析——基于EEMD的方法</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4 相关实验介绍</a></li>
 </ul>
 
             
@@ -144,13 +143,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>3</li>
+      <li>4 相关实验介绍</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/content/chapter3.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/content/chapter4.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -164,21 +163,28 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>3<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<div class="section" id="eda-scl">
-<h2>3.1 量化基础EDA（SCL）<a class="headerlink" href="#eda-scl" title="永久链接至标题">¶</a></h2>
-<p>SCL产生的基线是不断变化的，换言之，个体的基础SCL信号是持续变化的，彼此之间也可能差异显著。因此，不能简单对SCL信号进行平均化处理来量化SCL，平均数可能会包含SCR，导致高估真实的SCL值，这种方式量化的结果很难判断被试的整体SCL水平是高是低。<br />研究者在量化SCL信号前，需从基础信号中减去相位信号（SCR）的振幅，或是在未产生SCR的周期中测量，这样得出的基线更加真实可靠。在研究SCL时，常见的操作是对信号进行归一化，即人为设定一条SCL信号作为基准，然后对同一被试进行不同操作，比较产生的SCL信号与基准信号之间的相对差值，不考虑绝对差值。</p>
-<p><img alt="https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/normalization.png" src="https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/normalization.png" /></p>
-<center>线性归一化公式</center><p><img alt="https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/meannormalization.png" src="https://raw.githubusercontent.com/evelyn046/EDAmanual_test/master/source/picture/meannormalization.png" /></p>
-<center>均值归一化公式</center>
-此外，建议对NS-SCRs频率（静息状态下通常为1-3次/分钟，高唤醒状态下超20次/分钟）以及NS-SCRs的峰值振幅进行测量，原因如下：<ul class="simple">
-<li>这些分量可直接参与计算，前提是测量不同被试或不同条件时要选择固定的测量时间尺度。</li>
-<li>一些较早的研究发现，SCL随着NS-SCRs频率的增加而下降，但之后研究者们同样发现，当被试处于高唤醒状态时，NS-SCRs频率会显著增加，尽管对于NS-SCRs的频率/振幅能否直接代替传统SCL信号一直争议不断，但至少可以将其看成反映唤醒程度的指标之一。（注：在高唤醒状态下，NS-SCRs可能会连续产生或相互叠加。）</li>
+<h1>4 相关实验介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>4.1 皮肤电信号在产品外观偏好评价中的应用研究<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>（1）目的：<br />研究皮肤电信号与用户对产品外观的情感体验存在的对应关系，验证皮电信号用于检测产品外观的偏好体验的可能性。</p>
+<p>（2）方法：<br />以座椅的不同外观方案为诱发材料，采集被试观看不同外观座椅的皮肤电信号，对信号进行预处理及特征提取，作出相应的数理统计，并与被试的主观问卷进行比较分析。</p>
+<ul class="simple">
+<li>数据采集量：共采集20组数据，5组无效数据，15组有效数据，男女比例1：1</li>
+<li>数据预处理：奈奎斯特采样定律采样 -&gt; 小波变换阈值降噪 -&gt; 标准化（观看图像时的皮电值减去平静状态下的皮电值）</li>
+<li>特征提取：素材图像出现的时间点后15s内皮电最大值与素材图像出现前5s内皮电最小值之差。</li>
 </ul>
+<p>（3）结果：<br />观察者在观看过程中皮电整体呈现缓慢下降，但偏好产品出现时，会出现皮电信号实时升高的情况；观看不同座椅时，观看者的皮电信号呈现显著性差异；在70%（73.3%）以上的情况下，被试皮电显著升高的座椅方案与被试主观问卷填写的偏好方案有对应关系。</p>
+<p>（4）结论：<br />在无巨大新异方案的情况下，皮电信号能较好地实时反映观看者的偏好情绪，对产品外观方案评价具有较好的应用价值，但对于情绪性质的判断还应结合主观评价的方式。</p>
 </div>
-<div class="section" id="eda-scr">
-<h2>3.2 量化相位EDA（SCR）<a class="headerlink" href="#eda-scr" title="永久链接至标题">¶</a></h2>
-<p>在测量EDA的实验中，首先要制定一个标准来确定得到的SCR信号是事件相关的还是非特异性的。如果标准制定过于宽松，可能会导致误将NS-SCR视为ER-SCR一并分析，误认为这些值与实验操作有关。如果标准制定过于严格，会导致许多ER-SCR被错误分至NS-SCR一类过滤掉，结果无法达到预期标准。</p>
+<div class="section" id="eemd">
+<h2>4.2 可用性测试中用户皮肤电水平变化分析——基于EEMD的方法<a class="headerlink" href="#eemd" title="永久链接至标题">¶</a></h2>
+<p>（1） 目的：<br />基于总体平均经验模式分解（ensemble empirical mode deeomposition，EEMD）技术，提取用户SCL信号趋势和变化特征</p>
+<p>（2）方法：<br />以模拟装备管理系统的可用性作为测试对象，采集被试的SCL信号，被试完成测试后填写用户界面可用性严重程度问卷调查。首先，应用EEMD技术对采集到的SCL信号进行分解，得到若干独立的基本模式分量及趋势项；然后，对基本模式分量进行显著性检验，进而实现信号的去噪去趋势重构，得到用户SCL的变化特征。</p>
+<ul class="simple">
+<li>数据采集量：共采集16组数据，14名男性，2名女性，2组无效数据，14组有效数据。</li>
+</ul>
+<p>（3）结果:<br />界面的可用性问题使得用户SCL单调趋势变得不明显；当用户遇到可用性问题时，SCL去噪去趋势重构信号波动幅度明显变大，Wilcoxon符号秩检验表明不同阶段用户SCL去噪去趋势重构信号功率差异显著。</p>
+<p>(4)结论：<br />EEMD技术作为一种适用于非线性 、非平稳信号的 自适应处理和分析技术，能有效提取可用性测试过程中用户SCL信号的缓变和瞬变特征，实现原始信号的去噪去趋势重构 ，为基于用户皮肤电信号的可用性测试提供有效的分析手段和工具。</p>
 </div>
 </div>
 
@@ -190,10 +196,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter4.html" class="btn btn-neutral float-right" title="4 相关实验介绍" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="chapter2.html" class="btn btn-neutral float-left" title="2 实验前须知" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="chapter3.html" class="btn btn-neutral float-left" title="3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
